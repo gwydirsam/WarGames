@@ -81,7 +81,8 @@ BEGIN_TIMING(t1)
         pathfutures.push_back(std::async(std::launch::async,
                                          FindRandomPath, points));
     }
-END_TIMING(t1, "Points From Stdin")
+
+END_TIMING(t1, "Create Thread Loop")
 
 BEGIN_TIMING(t2)
     std::vector<Path> paths; // vector of possible paths
