@@ -18,7 +18,7 @@ git clone https://github.com/Gwydir8/WarGames.git ~/WarGames
 cd ~/WarGames
 make all
 ```
-Note: you need a version of g++ that supports -std=c++14
+Note: you need a version of g++ that supports -std=c++14. On OS X use homebrew.
 
 To Test:
 ```bash
