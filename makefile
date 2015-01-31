@@ -23,7 +23,7 @@ all: main
 
 test: debug
 
-debug: CFLAGS = -DVERBOSE -ggdb -Wall -Wextra -O0 -lpthread
+debug: CFLAGS = -DTIMING -ggdb -Wall -Wextra -O0 -lpthread
 debug: main
 
 main: $(OBJ)
