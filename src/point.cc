@@ -19,7 +19,7 @@ std::ostream& operator<<(std::ostream& os, const Point& point) {
 }
 
 double EuclideanDistance(Point p, Point q) {
-    return sqrt(pow((p.x() - q.x()),2) + pow((p.y() - q.y()),2));
+  return std::hypot(p.x() - q.x(),p.y() - q.y());
 }
 
 std::vector<Point> PointsVectorFromStdin() {
