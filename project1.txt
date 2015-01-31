@@ -1,0 +1,111 @@
+ (Print this page as a cover sheet for your printouts)		1/22/2015
+
+ CSCE 315 PROJECT 1 (INDIVIDUAL)
+ Section: ______________
+ Due: 11:59 P.M. Friday, January 30, 2015
+
+ "On my honor, as an Aggie, I have neither given nor received any unauthorized
+ aid on any portion of the academic work included in this assignment."
+
+
+ ________________________________		________________________________
+ Typed or printed name of student		Signature of student
+
+ NOTE:  Please follow your lab instructor's directions for submitting your
+ assignment through CSNET.  (Use VPN if you are off campus.)  ONLY
+ ASSIGNMENTS SUBMITTED TO CSNET WILL BE GRADED!  Make a printout of each
+ source file and staple it behind this cover sheet, unless your lab instructor
+ directs otherwise.  Sign it and give it to your TA in lab or put it in your
+ TA's mailbox in the corner of the 3rd floor of HRBB, near room 312.  IF YOU
+ DO NOT TURN IN A SIGNED COVER SHEET YOUR WORK WILL NOT BE GRADED!
+
+ NOTE:  This project will be graded on build.tamu.edu using g++ version
+ 4.9.2 with the -std=c++14 option, or javac and java.  You are free to develop
+ your programs on any other platform, but it is your responsibility to make
+ sure your programs also compile and execute correctly on build.tamu.edu as
+ specified.
+
+ NOTE:  Each file submitted (project1.cpp or Project1.java, etc.) must begin as
+ follows:
+ //Your name
+ //Course and section number
+ //Due: January 30, 2015 (or whatever the due date is)
+ //Project1.java (or project1.cpp or whatever this file name is)
+
+ The grade for this lab will be based on style (formatting, variable names,
+ comments, etc.), syntax (no compilation or link errors), and performance on
+ test cases (where "performance" is defined below).  Your grade for this project is:
+
+ Style			/20
+ Syntax			/30
+ Performance		/50
+ -------------------------------------------------------------------
+ Subotal		/100
+
+____ Late penalty multiplier (.99 for 1 hour late, .98 for two hours late, etc.)
+
+Total grade =
+
+The purpose of this project is to evaluate your ability to design and write
+good code.  You may use either C++ or Java with the compilers specified above.
+
+Your program should read from the standard input a list of points
+and find the shortest closed path connecting the points, in the shortest time.
+The input will be the x and y coordinates of the points as non-negative
+integers separated by white space (space, tab, newline, etc.); end of file is
+indicated by Control-D for console input.  Any line of input beginning with #
+is a comment, which your program should ignore.
+
+For example, if the input is
+
+# test case 1
+# 4 points p0, p1, p2, p3
+0	0
+0	1
+1	1
+1	2
+^D
+
+the output should be
+
+0
+1
+3
+2
+0
+4.82843
+
+since the shortest closed path is p0, p1, p3, p2, p0, and the path length is
+4.82843.  Use exactly this format for output since it will be graded by
+computer.
+
+NOTE: The input file will contain up to 1000 points.
+
+To simplify testing, put the input data in a text file named testcase1.txt and
+run
+
+./a.out < testcase1.txt	(for C++)
+
+or
+
+java Project1 < testcase1.txt	(for Java)
+
+The performance will be scored by scaling path length times execution time,
+with the smallest such product in the class getting the full 50 points for
+best performance, and the largest such product in the class getting only 70%
+of the 50 points (i.e., 35 points) for the worst performance.  If you write in
+Java you will only be compared against the other Java programs, and similarly
+for C++.
+
+Follow a good style guide (e.g.,
+http://google-styleguide.googlecode.com/svn/trunk/cppguide.html or
+http://www.stroustrup.com/Programming/PPP-style.pdf for C++, or
+http://www.oracle.com/technetwork/java/codeconvtoc-136057.html for Java).
+
+Also follow these three rules:
+1.  No more than one statement per line.
+2.  No function longer than 24 lines (one terminal window).
+3.  No line longer than 80 characters.
+
+Name your program project1.cpp or Project1.java and submit this source file
+using CSNET.
